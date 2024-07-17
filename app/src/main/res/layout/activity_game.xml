@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/road">
+
+    <!-- Hearts in the top-right corner -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/heart1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/heart"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp" />
+
+        <ImageView
+            android:id="@+id/heart2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/heart"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp" />
+
+        <ImageView
+            android:id="@+id/heart3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/heart"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp" />
+    </LinearLayout>
+
+    <!-- Odometer at the top-left corner -->
+    <TextView
+        android:id="@+id/odometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Odometer: 0"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Coin counter underneath the odometer -->
+    <TextView
+        android:id="@+id/coinCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coins: 0"
+        android:textSize="18sp"
+        android:textColor="#FFD700"
+        android:layout_below="@id/odometer"
+        android:layout_alignStart="@id/odometer"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1" />
+
+    <!-- Cheese falling in five lanes -->
+    <ImageView
+        android:id="@+id/cheese"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:src="@drawable/cheese"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Stone -->
+    <ImageView
+        android:id="@+id/stone"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:src="@drawable/stone"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"  />
+
+    <!-- Lanes for visual guidance (optional) -->
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="66dp"
+        android:layout_toEndOf="@id/cheese"
+        android:background="#FFFFFF" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="66dp"
+        android:layout_toStartOf="@id/cheese"
+        android:background="#FFFFFF" />
+
+    <!-- Car at the bottom -->
+    <ImageView
+        android:id="@+id/car"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:src="@drawable/sinwar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp" />
+
+    <!-- Left and Right Arrow Buttons -->
+    <ImageView
+        android:id="@+id/button_left"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:src="@drawable/leftarrow"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="24dp" />
+
+    <ImageView
+        android:id="@+id/button_right"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:src="@drawable/rightarrow"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="24dp" />
+
+</RelativeLayout>

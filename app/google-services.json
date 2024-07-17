@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "496649308871",
+    "project_id": "coin-collector-coin-game",
+    "storage_bucket": "coin-collector-coin-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496649308871:android:2f1b148c0ae2f2b9094ce2",
+        "android_client_info": {
+          "package_name": "com.example.coincollectioncargame"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzn8pMfwFKpzOLVebwXrEDnYooC9jCiJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
