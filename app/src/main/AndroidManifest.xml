@@ -44,8 +44,8 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            import os
-            api_key = os.getenv('API_KEY')            
+            String apiKey = System.getenv("API_KEY");
+     
             />
     </application>
 
