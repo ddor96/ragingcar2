@@ -18,8 +18,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        // Inject API key directly
-        resValue("string", "google_maps_key", "AIzaSyBzn8pMfwFKpzOLVebwXrEDnYooC9jCiJ0")
+        manifestPlaceholders = [apiKey: project.findProperty("API_KEY") ?: ""]
     }
 
     buildTypes {
