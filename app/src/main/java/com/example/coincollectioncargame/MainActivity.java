@@ -19,6 +19,8 @@ import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 
 public class MainActivity extends AppCompatActivity {
+String apiKey = getString(R.string.api_key);
+
 
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1;
     private double latitude = 0.0, longitude = 0.0;
